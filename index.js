@@ -13,5 +13,5 @@ app.use(cors());
 routes(app);
 
 app.listen(PORT, HOSTNAME,() =>{
-    console.log('movies api sever online http://',HOSTNAME +':',PORT);
+    console.log('movies api sever online http://'+HOSTNAME +':'+PORT);
 })
