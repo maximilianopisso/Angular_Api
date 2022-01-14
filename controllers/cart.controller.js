@@ -9,7 +9,7 @@ export const addToCart = (req, res) => {
     const itemToAdd = req.body;
 
     if (cartContent.findIndex(movie => movie.id === itemToAdd.id) < 0) {
-        cartContent.push(itemToAdd);   //agrego body
+        cartContent.push(itemToAdd);   
         res.send({
             status: "OK",
             description: "ADD MOVIE",

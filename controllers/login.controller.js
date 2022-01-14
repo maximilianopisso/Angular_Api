@@ -45,7 +45,7 @@ export const validateCredentials = (req, res) => {
         console.log("USER VALIDO");
         const payload = {
             email: usersContent[indexUser].email,
-            nombre: usersContent[indexUser].name,
+            nombre: usersContent[indexUser].nombre,
             password: usersContent[indexUser].password,
             role: usersContent[indexUser].role
         }
