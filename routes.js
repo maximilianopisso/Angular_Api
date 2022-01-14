@@ -20,11 +20,11 @@ export const routes = (app) => {
         .delete(clearCart)
 
     app.route('/api/login')
-        .get(getUsers)                //
-        .post(addUser)                //
+        .get(getUsers)                // obtiene listado de usuarios
+        .post(addUser)                // agrega un ususario nuevo
 
     app.route('/api/login/validate')
-        .post(validateCredentials)   //
+        .post(validateCredentials)   // metodo para realizar validacion de usuario contra la API
 }
 
 
