@@ -5,8 +5,8 @@ import { SECRET_KEY } from "../config/config.js"
 const usersContent = [
     {
         id: 1,
-        nombre: "Admin",
-        apellido: "Lopez",
+        nombre: "Maximiliano",
+        apellido: "Pisso",
         direccion: "Rosario 1234",
         movil: "+54 3416346585",
         email: "maximiliano.pisso@gmail.com",
@@ -21,7 +21,6 @@ const usersContent = [
         direccion: "Corrientes 154",
         movil: "+54 3416556688",
         email: "user@gmail.com",
-        name: "USER - Normal",
         password: "11223344",
         role: "user"
     }
@@ -46,6 +45,7 @@ export const validateCredentials = (req, res) => {
         const payload = {
             email: usersContent[indexUser].email,
             nombre: usersContent[indexUser].nombre,
+            apellido: usersContent[indexUser].apellido,
             password: usersContent[indexUser].password,
             role: usersContent[indexUser].role
         }
