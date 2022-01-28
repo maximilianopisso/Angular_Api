@@ -12,12 +12,9 @@ export const routes = (app) => {
         .get(getTest)
 
     app.route('/api/cart')
-    .get(getCart)                 // obtiene contenido del carrito
-        .post(addToCart)              // agrega una movie al carrito
-        .delete( removeFromCart)       // elimina una movie del carrito
-        // .get(checkToken, getCart)                 // obtiene contenido del carrito
-        // .post(checkToken, addToCart)              // agrega una movie al carrito
-        // .delete(checkToken, removeFromCart)       // elimina una movie del carrito
+         .get(checkToken, getCart)                 // obtiene contenido del carrito
+         .post(checkToken, addToCart)              // agrega una movie al carrito
+         .delete(checkToken, removeFromCart)       // elimina una movie del carrito
 
     app.route('/api/cart/clear')        // metodo para vaciar carrito
         .delete(clearCart)
