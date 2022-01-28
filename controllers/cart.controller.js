@@ -11,7 +11,7 @@ export const addToCart = (req, res) => {
     if (cartContent.findIndex(movie => movie.id === itemToAdd.id) < 0) {
         cartContent.push(itemToAdd);   
         res.send({
-            status: "OK",
+            status: "OK-ADDED",
             description: "ADD MOVIE",
             cartContent
         });
@@ -31,7 +31,7 @@ export const removeFromCart = (req, res) => {
     if (indextoRemove >= 0) {
         cartContent.splice(indextoRemove, 1);
         res.send({
-            status: "OK",
+            status: "OK-DELETED",
             description: "DELETED MOVIE",
             cartContent
         });
