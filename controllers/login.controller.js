@@ -16,8 +16,8 @@ const usersContent = [
 
     {
         id: 2,
-        nombre: "User",
-        apellido: "Perez",
+        nombre: "Adrian",
+        apellido: "Garcia",
         direccion: "Corrientes 154",
         movil: "+54 3416556688",
         email: "user@gmail.com",
